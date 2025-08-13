@@ -13,7 +13,7 @@ namespace Barmetler.RoadSystem.Util
     /// <typeparam name="T">Type of the elements in the array.</typeparam>
     [DebuggerDisplay("Length = {Length}")]
     [DebuggerTypeProxy(typeof(TwoDimensionalNativeArrayDebugView<>))]
-    [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(int) })]
+    [BurstCompatible(GenericTypeArguments = new[] { typeof(int) })]
     public struct TwoDimensionalNativeArray<T> where T : struct
     {
         public readonly int Width;
@@ -80,7 +80,7 @@ namespace Barmetler.RoadSystem.Util
     /// <typeparam name="T">Type of the elements in the array.</typeparam>
     [DebuggerDisplay("Length = {Length}")]
     [DebuggerTypeProxy(typeof(ExtendedTwoDimensionalNativeArrayDebugView<>))]
-    [GenerateTestsForBurstCompatibility(GenericTypeArguments = new[] { typeof(int) })]
+    [BurstCompatible(GenericTypeArguments = new[] { typeof(int) })]
     public struct ExtendedTwoDimensionalNativeArray<T> where T : struct
     {
         public readonly int Width;
